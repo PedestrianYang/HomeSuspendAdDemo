@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ymq.com.homesuspendadview.MainActivity">
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </ListView>
+
+    <ymq.com.homesuspendadview.widget.ADSuspendRelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/ad_view"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/ad_img"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/suspend_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/btn_ad_img_close"
+            android:layout_alignParentEnd="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_suspend_ad_close"
+                android:id="@+id/ad_img_close"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+
+        </FrameLayout>
+
+
+    </ymq.com.homesuspendadview.widget.ADSuspendRelativeLayout>
+
+
+
+</RelativeLayout>
